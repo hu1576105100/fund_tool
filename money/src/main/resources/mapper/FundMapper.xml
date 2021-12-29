@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.money.money.mapper.FundMapper">
+
+    <insert id="saveAndUpdate">
+        INSERT INTO `z_fund`(`code`, `sort_en`, `name`, `long_en`, `type`, `create_time`) VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (
+            #{item.code},
+            #{item.sortEn},
+            #{item.name},
+            #{item.longEn},
+            #{item.type},
+            now()
+            )
+        </foreach>
+        ON DUPLICATE KEY UPDATE
+        sort_en=VALUES(sort_en),
+        `name`=VALUES(`name`),
+        long_en=VALUES(long_en),
+        `type`=VALUES(`type`),
+        update_time = NOW();
+    </insert>
+</mapper>

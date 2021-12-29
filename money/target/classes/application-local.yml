@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      strict: true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.89.3.136/iot_device?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: test
+    password: test
+
+

@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: iot-materiel-control
+  profiles:
+    active: local
+server:
+  port: 9111
+management:
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    root: INFO
+    com.zb.iot.materiel.web.mapper: DEBUG
+
