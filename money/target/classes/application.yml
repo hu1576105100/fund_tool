@@ -3,6 +3,12 @@ spring:
     name: iot-materiel-control
   profiles:
     active: local
+  thymeleaf:
+    mode: HTML
+    cache: false
+    encoding: utf-8
+    prefix: classpath:/templates/
+    suffix: .html
 server:
   port: 9111
 management:
@@ -24,4 +30,6 @@ logging:
   level:
     root: INFO
     com.zb.iot.materiel.web.mapper: DEBUG
+
+
 

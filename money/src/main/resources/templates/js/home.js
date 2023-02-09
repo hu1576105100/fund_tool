@@ -85,7 +85,7 @@ player.addEventListener("pause", function () {
 
 // 设置播放器属性
 
-player.setAttribute("poster", "../img/poster.jpg");
+player.setAttribute("poster", "../img/posters.jpg");
 
 function set_player(src) {
     player.setAttribute("src", src);
