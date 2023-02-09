@@ -1,6 +1,6 @@
 package com.money.money.common.exception;
 
-import com.venus.exception.config.BusinessExceptionAssert;
+import com.money.money.common.exception.config.BusinessExceptionAssert;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

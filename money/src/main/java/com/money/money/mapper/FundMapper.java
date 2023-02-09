@@ -1,7 +1,7 @@
 package com.money.money.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.money.money.entity.po.Fund;
+import com.money.money.entity.Fund;
 import org.springframework.stereotype.Repository;
 import java.util.List;
 
