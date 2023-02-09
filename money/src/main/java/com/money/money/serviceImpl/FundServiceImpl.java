@@ -18,6 +18,6 @@ public class FundServiceImpl implements FundService {
 
     @Override
     public void saveAndUpdateFund() {
-        fundMapper.saveAndUpdate();
+//        fundMapper.saveAndUpdate();
     }
 }

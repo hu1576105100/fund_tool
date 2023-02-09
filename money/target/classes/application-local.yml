@@ -4,8 +4,8 @@ spring:
       primary: master
       strict: true
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.89.3.136/iot_device?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Shanghai
-    username: test
-    password: test
+    url: jdbc:mysql://47.99.126.177:3306/iot_device?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: BA/hYNIZ)4ba
 
 
